@@ -100,8 +100,11 @@ const mongoose = require("mongoose"); // mongoose를 요청
 
 // 데이터베이스 연결 설정
 mongoose.connect(
-  "mongodb+srv://wjdgks815:kAaHXK4G52DSfDIn@ut-node.psdbufj.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node/ut-node",
-  { useNewUrlParser: true }
+  "mongodb+srv://ut-node:V1g5HfxMKHhE4f2m@ut-node.4o7ookk.mongodb.net/?retryWrites=true&w=majority&appName=ut-node",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
 );
 // 연결되면 메시지를 보냄
 const db = mongoose.connection;
